@@ -304,16 +304,24 @@ body {
 }
 
 .profile-avatar {
-    width: 100px;
-    height: 100px;
-    background: var(--gradient-primary);
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin: 0 auto 1rem;
-    font-size: 2.5rem;
-    color: white;
+    overflow: hidden;
+    border: 4px solid var(--primary-color);
+    box-shadow: var(--shadow-md);
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile-photo:hover {
+    transform: scale(1.05);
 }
 
 .profile-info h3 {
@@ -1014,6 +1022,98 @@ body {
     color: var(--text-secondary);
 }
 
+/* 微信二维码样式 */
+.wechat-qr {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.qr-code {
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+    transition: transform 0.3s ease;
+}
+
+.qr-code:hover {
+    transform: scale(1.05);
+    border-color: var(--primary-color);
+}
+
+/* 微信二维码弹窗样式 */
+.wechat-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    text-align: center;
+    position: relative;
+    max-width: 400px;
+    width: 90%;
+    animation: slideIn 0.3s ease;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--text-secondary);
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: var(--text-primary);
+}
+
+.modal-content h3 {
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+}
+
+.modal-content p {
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+}
+
+.modal-qr {
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { 
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to { 
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .contact-form {
     background: white;
     padding: 2rem;
@@ -1146,6 +1246,11 @@ body {
     
     .hero-buttons {
         justify-content: center;
+    }
+    
+    .profile-avatar {
+        width: 100px;
+        height: 100px;
     }
 }
 

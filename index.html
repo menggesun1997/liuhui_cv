@@ -86,7 +86,7 @@
             <div class="hero-image">
                 <div class="profile-card">
                     <div class="profile-avatar">
-                        <i class="fas fa-user"></i>
+                        <img src="personal_picture.jpeg" alt="孙蒙鸽个人照片" class="profile-photo">
                     </div>
                     <div class="profile-info">
                         <h3>孙蒙鸽</h3>
@@ -398,378 +398,338 @@
             <h2 class="section-title">科研项目</h2>
             <p class="section-subtitle">我的研究兴趣在于探索并应用前沿AI技术解决复杂的情报分析与科学发现问题。从AIGC的前沿理论探索，到AI4S的具体场景赋能，再到新兴技术识别系统的端到端构建，我的项目经历包含了从"方法论创新"到"应用实践"的完整路径。</p>
             
-            <div class="research-directions">
-                <!-- AIGC/智能情报方向 -->
-                <div class="direction-card">
-                    <div class="direction-header">
-                        <div class="direction-icon">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <div class="direction-title">
-                            <h3>AIGC/智能情报方向</h3>
-                            <p>前沿AI技术在情报分析中的应用与创新</p>
-                        </div>
-                    </div>
-                    
-                    <div class="direction-content">
-                        <div class="contribution-section">
-                            <h4>核心贡献</h4>
-                            <div class="contribution-list">
-                                <div class="contribution-item">
-                                    <div class="contribution-icon">
-                                        <i class="fas fa-search"></i>
-                                    </div>
-                                    <div class="contribution-text">
-                                        <h5>理论研究</h5>
-                                        <p>通过深度文献调研，深度剖析了大语言模型等相关AIGC技术对情报学研究、情报工作业务流程等的潜在影响。研究成果有效支撑了国家社科重大及自然科学基金重点等项目的顶层设计与申报工作。</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="contribution-item">
-                                    <div class="contribution-icon">
-                                        <i class="fas fa-chart-line"></i>
-                                    </div>
-                                    <div class="contribution-text">
-                                        <h5>技术趋势追踪与实证评测</h5>
-                                        <p>负责关键AIGC技术（大语言模型、智能体）的趋势追踪与实证评测，通过系统性实验，为智能情报关键技术发展提供了前瞻性洞察与可行性建议。</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="contribution-item">
-                                    <div class="contribution-icon">
-                                        <i class="fas fa-cogs"></i>
-                                    </div>
-                                    <div class="contribution-text">
-                                        <h5>算法自研与工程化</h5>
-                                        <p>针对中科院在重大科技方向决策中的痛点，独立研发"科技问题抽取"与"科技问题评价"核心算法，并将其成功工程化、落地为"重大科技问题智能态势感知与分析平台"，目前已服务于中科院相关部门的项目部署工作。</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="contribution-item">
-                                    <div class="contribution-icon">
-                                        <i class="fas fa-database"></i>
-                                    </div>
-                                    <div class="contribution-text">
-                                        <h5>数据构建与服务</h5>
-                                        <p>负责动态更新"前沿科学问题"和"重大科技需求"清单数据，为情报决策提供了高质量的数据支撑。</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="project-list">
-                            <h4>支撑项目列表</h4>
-                            <div class="project-items">
-                                <div class="project-item">
-                                    <div class="project-badge">国家社科重大项目</div>
-                                    <h5>数智转型背景下智能情报关键技术应用研究</h5>
-                                    <p class="project-period">2024年01月 - 至今</p>
-                                    <p class="project-role">深度参与</p>
-                                </div>
-                                
-                                <div class="project-item">
-                                    <div class="project-badge">国家自然科学基金重点项目</div>
-                                    <h5>数智赋能的科技信息资源与知识管理理论变革</h5>
-                                    <p class="project-period">2023年01月 - 至今</p>
-                                    <p class="project-role">深度参与</p>
-                                </div>
-                                
-                                <div class="project-item">
-                                    <div class="project-badge">中科院文情专项</div>
-                                    <h5>面向重大科技问题场景的智能情报分析模型研究与领域示范</h5>
-                                    <p class="project-period">2022年01月 - 至今</p>
-                                    <p class="project-role">深度参与</p>
-                                </div>
-                                
-                                <div class="project-item">
-                                    <div class="project-badge">中科院战略研究专项</div>
-                                    <h5>"两个清单"编制项目</h5>
-                                    <p class="project-period">2023年01月 - 2024年01月</p>
-                                    <p class="project-role">参与</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="projects-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="proj-aigc">AIGC/智能情报</button>
+                    <button class="tab-btn" data-tab="proj-ai4science">AI4Science</button>
+                    <button class="tab-btn" data-tab="proj-emerging">新兴技术识别</button>
+                    <button class="tab-btn" data-tab="proj-cross">数据科学交叉</button>
+                    <button class="tab-btn" data-tab="proj-intelligence">情报调研跟踪</button>
                 </div>
                 
-                <!-- AI for Science方向 -->
-                <div class="direction-card">
-                    <div class="direction-header">
-                        <div class="direction-icon">
-                            <i class="fas fa-microscope"></i>
-                        </div>
-                        <div class="direction-title">
-                            <h3>AI for Science方向</h3>
-                            <p>AI技术在科学研究中的创新应用</p>
+                <div class="tab-content">
+                    <!-- AIGC/智能情报方向 -->
+                    <div class="tab-pane active" id="proj-aigc">
+                        <div class="direction-content">
+                            <div class="contribution-section">
+                                <h4>核心贡献</h4>
+                                <div class="contribution-list">
+                                    <div class="contribution-item">
+                                        <div class="contribution-icon">
+                                            <i class="fas fa-search"></i>
+                                        </div>
+                                        <div class="contribution-text">
+                                            <h5>理论研究</h5>
+                                            <p>通过深度文献调研，深度剖析了大语言模型等相关AIGC技术对情报学研究、情报工作业务流程等的潜在影响。研究成果有效支撑了国家社科重大及自然科学基金重点等项目的顶层设计与申报工作。</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contribution-item">
+                                        <div class="contribution-icon">
+                                            <i class="fas fa-chart-line"></i>
+                                        </div>
+                                        <div class="contribution-text">
+                                            <h5>技术趋势追踪与实证评测</h5>
+                                            <p>负责关键AIGC技术（大语言模型、智能体）的趋势追踪与实证评测，通过系统性实验，为智能情报关键技术发展提供了前瞻性洞察与可行性建议。</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contribution-item">
+                                        <div class="contribution-icon">
+                                            <i class="fas fa-cogs"></i>
+                                        </div>
+                                        <div class="contribution-text">
+                                            <h5>算法自研与工程化</h5>
+                                            <p>针对中科院在重大科技方向决策中的痛点，独立研发"科技问题抽取"与"科技问题评价"核心算法，并将其成功工程化、落地为"重大科技问题智能态势感知与分析平台"，目前已服务于中科院相关部门的项目部署工作。</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="contribution-item">
+                                        <div class="contribution-icon">
+                                            <i class="fas fa-database"></i>
+                                        </div>
+                                        <div class="contribution-text">
+                                            <h5>数据构建与服务</h5>
+                                            <p>负责动态更新"前沿科学问题"和"重大科技需求"清单数据，为情报决策提供了高质量的数据支撑。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="project-list">
+                                <h4>支撑项目列表</h4>
+                                <div class="project-items">
+                                    <div class="project-item">
+                                        <div class="project-badge">国家社科重大项目</div>
+                                        <h5>数智转型背景下智能情报关键技术应用研究</h5>
+                                        <p class="project-period">2024年01月 - 至今</p>
+                                        <p class="project-role">深度参与</p>
+                                    </div>
+                                    
+                                    <div class="project-item">
+                                        <div class="project-badge">国家自然科学基金重点项目</div>
+                                        <h5>数智赋能的科技信息资源与知识管理理论变革</h5>
+                                        <p class="project-period">2023年01月 - 至今</p>
+                                        <p class="project-role">深度参与</p>
+                                    </div>
+                                    
+                                    <div class="project-item">
+                                        <div class="project-badge">中科院文情专项</div>
+                                        <h5>面向重大科技问题场景的智能情报分析模型研究与领域示范</h5>
+                                        <p class="project-period">2022年01月 - 至今</p>
+                                        <p class="project-role">深度参与</p>
+                                    </div>
+                                    
+                                    <div class="project-item">
+                                        <div class="project-badge">中科院战略研究专项</div>
+                                        <h5>"两个清单"编制项目</h5>
+                                        <p class="project-period">2023年01月 - 2024年01月</p>
+                                        <p class="project-role">参与</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     
-                    <div class="direction-content">
-                        <div class="contribution-section">
-                            <h4>核心贡献</h4>
-                            <div class="contribution-list">
-                                <div class="contribution-item">
-                                    <div class="contribution-icon">
-                                        <i class="fas fa-lightbulb"></i>
+                    <!-- AI for Science方向 -->
+                    <div class="tab-pane" id="proj-ai4science">
+                        <div class="direction-content">
+                            <div class="contribution-section">
+                                <h4>核心贡献</h4>
+                                <div class="contribution-list">
+                                    <div class="contribution-item">
+                                        <div class="contribution-icon">
+                                            <i class="fas fa-lightbulb"></i>
+                                        </div>
+                                        <div class="contribution-text">
+                                            <h5>AI4Science 战略情报支持</h5>
+                                            <p>负责跟踪、研判全球 AI for Science 的前沿动态与核心技术，提炼并撰写深度分析报告，研究成果直接支撑了团队负责人在雁栖湖青年论坛以及周琪校长在中关村论坛等重要场合的大会报告。</p>
+                                        </div>
                                     </div>
-                                    <div class="contribution-text">
-                                        <h5>AI4Science 战略情报支持</h5>
-                                        <p>负责跟踪、研判全球 AI for Science 的前沿动态与核心技术，提炼并撰写深度分析报告，研究成果直接支撑了团队负责人在雁栖湖青年论坛以及周琪校长在中关村论坛等重要场合的大会报告。</p>
+                                    
+                                    <div class="contribution-item">
+                                        <div class="contribution-icon">
+                                            <i class="fas fa-project-diagram"></i>
+                                        </div>
+                                        <div class="contribution-text">
+                                            <h5>领域应用实践</h5>
+                                            <p>负责从文献数据处理、关键实体与关系的标注，到最终构建该领域专用知识图谱的全过程，为后续利用AI进行实验设计与结果推理打下了坚实的数据与知识基础。</p>
+                                        </div>
                                     </div>
                                 </div>
-                                
-                                <div class="contribution-item">
-                                    <div class="contribution-icon">
-                                        <i class="fas fa-project-diagram"></i>
+                            </div>
+                            
+                            <div class="project-list">
+                                <h4>支撑项目列表</h4>
+                                <div class="project-items">
+                                    <div class="project-item">
+                                        <div class="project-badge">国家社会科学基金项目</div>
+                                        <h5>支撑AI4Science的科技图书馆知识服务内容研究</h5>
+                                        <p class="project-period">2021年01月 - 2023年12月</p>
+                                        <p class="project-role">深度参与</p>
                                     </div>
-                                    <div class="contribution-text">
-                                        <h5>领域应用实践</h5>
-                                        <p>负责从文献数据处理、关键实体与关系的标注，到最终构建该领域专用知识图谱的全过程，为后续利用AI进行实验设计与结果推理打下了坚实的数据与知识基础。</p>
+                                    
+                                    <div class="project-item">
+                                        <div class="project-badge">中科院文情专项</div>
+                                        <h5>"智慧数据+AI"支撑科学创新实验方法的推理发现研究</h5>
+                                        <p class="project-period">2022年01月 - 2024年09月</p>
+                                        <p class="project-role">参与</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="project-list">
-                            <h4>支撑项目列表</h4>
-                            <div class="project-items">
-                                <div class="project-item">
-                                    <div class="project-badge">国家社会科学基金项目</div>
-                                    <h5>支撑AI4Science的科技图书馆知识服务内容研究</h5>
-                                    <p class="project-period">2021年01月 - 2023年12月</p>
-                                    <p class="project-role">深度参与</p>
-                                </div>
-                                
-                                <div class="project-item">
-                                    <div class="project-badge">中科院文情专项</div>
-                                    <h5>"智慧数据+AI"支撑科学创新实验方法的推理发现研究</h5>
-                                    <p class="project-period">2022年01月 - 2024年09月</p>
-                                    <p class="project-role">参与</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- 新兴技术识别 -->
-                <div class="direction-card">
-                    <div class="direction-header">
-                        <div class="direction-icon">
-                            <i class="fas fa-radar"></i>
-                        </div>
-                        <div class="direction-title">
-                            <h3>新兴技术识别</h3>
-                            <p>多源数据驱动的技术趋势分析与预测</p>
                         </div>
                     </div>
                     
-                    <div class="direction-content">
-                        <div class="contribution-section">
-                            <h4>核心贡献</h4>
-                            <div class="contribution-list">
-                                <div class="contribution-item">
-                                    <div class="contribution-icon">
-                                        <i class="fas fa-spider"></i>
+                    <!-- 新兴技术识别 -->
+                    <div class="tab-pane" id="proj-emerging">
+                        <div class="direction-content">
+                            <div class="contribution-section">
+                                <h4>核心贡献</h4>
+                                <div class="contribution-list">
+                                    <div class="contribution-item">
+                                        <div class="contribution-icon">
+                                            <i class="fas fa-spider"></i>
+                                        </div>
+                                        <div class="contribution-text">
+                                            <h5>多源异构数据获取与解析</h5>
+                                            <p>开发可定制的网络爬虫与数据解析模型，能够自动化地从Scopus等文献数据库（曾处理超17万篇航空文献）、网站、PDF文档中获取并结构化目标数据。</p>
+                                        </div>
                                     </div>
-                                    <div class="contribution-text">
-                                        <h5>多源异构数据获取与解析</h5>
-                                        <p>开发可定制的网络爬虫与数据解析模型，能够自动化地从Scopus等文献数据库（曾处理超17万篇航空文献）、网站、PDF文档中获取并结构化目标数据。</p>
+                                    
+                                    <div class="contribution-item">
+                                        <div class="contribution-icon">
+                                            <i class="fas fa-brain"></i>
+                                        </div>
+                                        <div class="contribution-text">
+                                            <h5>核心智能分析引擎</h5>
+                                            <p>搭建了一套以NLP和机器学习为核心的分析引擎，负责其中关键算法的实现与集成。技术栈包括：主题发现：术语抽取、主题识别；趋势预警：基于 Kleinberg 算法的突发检测；关联与预测：向量表征、链路预测。该引擎能够有效扫描技术"弱信号"，并对发展态势进行量化分析与预判。</p>
+                                        </div>
                                     </div>
-                                </div>
-                                
-                                <div class="contribution-item">
-                                    <div class="contribution-icon">
-                                        <i class="fas fa-brain"></i>
-                                    </div>
-                                    <div class="contribution-text">
-                                        <h5>核心智能分析引擎</h5>
-                                        <p>搭建了一套以NLP和机器学习为核心的分析引擎，负责其中关键算法的实现与集成。技术栈包括：主题发现：术语抽取、主题识别；趋势预警：基于 Kleinberg 算法的突发检测；关联与预测：向量表征、链路预测。该引擎能够有效扫描技术"弱信号"，并对发展态势进行量化分析与预判。</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="contribution-item">
-                                    <div class="contribution-icon">
-                                        <i class="fas fa-users"></i>
-                                    </div>
-                                    <div class="contribution-text">
-                                        <h5>领域服务</h5>
-                                        <p>研究成果、技术平台已成功服务于中国航空研究院、中国船舶集团等客户，为其在新兴技术领域的布局提供了直观、高效的决策工具。</p>
+                                    
+                                    <div class="contribution-item">
+                                        <div class="contribution-icon">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+                                        <div class="contribution-text">
+                                            <h5>领域服务</h5>
+                                            <p>研究成果、技术平台已成功服务于中国航空研究院、中国船舶集团等客户，为其在新兴技术领域的布局提供了直观、高效的决策工具。</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="project-list">
-                            <h4>支撑项目列表</h4>
-                            <div class="project-items">
-                                <div class="project-item">
-                                    <div class="project-badge">中国航空研究院项目</div>
-                                    <h5>航空领域新兴技术识别</h5>
-                                    <p class="project-period">2021年01月 - 2022年01月</p>
-                                    <p class="project-role">深度参与</p>
-                                </div>
-                                
-                                <div class="project-item">
-                                    <div class="project-badge">中国船舶集团项目</div>
-                                    <h5>海洋领域新兴技术识别</h5>
-                                    <p class="project-period">2022年01月 - 2022年12月</p>
-                                    <p class="project-role">深度参与</p>
-                                </div>
-                                
-                                <div class="project-item">
-                                    <div class="project-badge">中科院发展规划局战略研究专项</div>
-                                    <h5>重大共性基础性技术核心问题识别与研发模式研究</h5>
-                                    <p class="project-period">2023年01月 - 2025年01月</p>
-                                    <p class="project-role">参与</p>
-                                </div>
-                                
-                                <div class="project-item">
-                                    <div class="project-badge">中国科技技术发展战略研究院</div>
-                                    <h5>新兴技术弱信号扫描预判方法研究</h5>
-                                    <p class="project-period">2022年01月 - 2023年01月</p>
-                                    <p class="project-role">参与</p>
+                            
+                            <div class="project-list">
+                                <h4>支撑项目列表</h4>
+                                <div class="project-items">
+                                    <div class="project-item">
+                                        <div class="project-badge">中国航空研究院项目</div>
+                                        <h5>航空领域新兴技术识别</h5>
+                                        <p class="project-period">2021年01月 - 2022年01月</p>
+                                        <p class="project-role">深度参与</p>
+                                    </div>
+                                    
+                                    <div class="project-item">
+                                        <div class="project-badge">中国船舶集团项目</div>
+                                        <h5>海洋领域新兴技术识别</h5>
+                                        <p class="project-period">2022年01月 - 2022年12月</p>
+                                        <p class="project-role">深度参与</p>
+                                    </div>
+                                    
+                                    <div class="project-item">
+                                        <div class="project-badge">中科院发展规划局战略研究专项</div>
+                                        <h5>重大共性基础性技术核心问题识别与研发模式研究</h5>
+                                        <p class="project-period">2023年01月 - 2025年01月</p>
+                                        <p class="project-role">参与</p>
+                                    </div>
+                                    
+                                    <div class="project-item">
+                                        <div class="project-badge">中国科技技术发展战略研究院</div>
+                                        <h5>新兴技术弱信号扫描预判方法研究</h5>
+                                        <p class="project-period">2022年01月 - 2023年01月</p>
+                                        <p class="project-role">参与</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- 数据科学交叉 -->
-                <div class="direction-card">
-                    <div class="direction-header">
-                        <div class="direction-icon">
-                            <i class="fas fa-chart-bar"></i>
-                        </div>
-                        <div class="direction-title">
-                            <h3>数据科学交叉</h3>
-                            <p>跨学科方法论的创新应用</p>
                         </div>
                     </div>
                     
-                    <div class="direction-content">
-                        <div class="contribution-section">
-                            <h4>核心贡献</h4>
-                            <div class="contribution-list">
-                                <div class="contribution-item">
-                                    <div class="contribution-icon">
-                                        <i class="fas fa-globe"></i>
+                    <!-- 数据科学交叉 -->
+                    <div class="tab-pane" id="proj-cross">
+                        <div class="direction-content">
+                            <div class="contribution-section">
+                                <h4>核心贡献</h4>
+                                <div class="contribution-list">
+                                    <div class="contribution-item">
+                                        <div class="contribution-icon">
+                                            <i class="fas fa-globe"></i>
+                                        </div>
+                                        <div class="contribution-text">
+                                            <h5>前沿因果推断——量化地缘政治对科学的影响</h5>
+                                            <p>该项目主要是公派期间参与的外导项目。该项目旨在探究地缘政治冲突与科学脱钩对国家科研发展的影响。在该项目中，独立运用合成控制法 (SCM)，以英国脱欧和俄乌冲突为自然实验，量化评估了地缘政治冲突对国家科研产出的因果效应。研究成果作为第一作者在国际顶级会议ICSSI 2025上进行报告，揭示了经费重分配与科研人员流动对国家科研轨迹的关键影响。</p>
+                                        </div>
                                     </div>
-                                    <div class="contribution-text">
-                                        <h5>前沿因果推断——量化地缘政治对科学的影响</h5>
-                                        <p>该项目主要是公派期间参与的外导项目。该项目旨在探究地缘政治冲突与科学脱钩对国家科研发展的影响。在该项目中，独立运用合成控制法 (SCM)，以英国脱欧和俄乌冲突为自然实验，量化评估了地缘政治冲突对国家科研产出的因果效应。研究成果作为第一作者在国际顶级会议ICSSI 2025上进行报告，揭示了经费重分配与科研人员流动对国家科研轨迹的关键影响。</p>
+                                    
+                                    <div class="contribution-item">
+                                        <div class="contribution-icon">
+                                            <i class="fas fa-eye"></i>
+                                        </div>
+                                        <div class="contribution-text">
+                                            <h5>跨界模型迁移——用计算机视觉解析引文规律</h5>
+                                            <p>在这个由我独立主持的本科生项目中，我进行了一次大胆的跨界方法论尝试。核心创新在于，我将一个典型的科学计量学问题（引文模式分类），创造性地重新定义为一个图像识别问题。我通过将引文时间序列数据转换为引文曲线图（图像矩阵），成功地将计算机视觉领域的顶尖模型 Inception-v3 应用于此，并通过迁移学习高效地完成了训练。</p>
+                                        </div>
                                     </div>
                                 </div>
-                                
-                                <div class="contribution-item">
-                                    <div class="contribution-icon">
-                                        <i class="fas fa-eye"></i>
+                            </div>
+                            
+                            <div class="project-list">
+                                <h4>支撑项目列表</h4>
+                                <div class="project-items">
+                                    <div class="project-item">
+                                        <div class="project-badge">NSF项目</div>
+                                        <h5>Collaborative Research: The scientific cost of isolationism</h5>
+                                        <p class="project-period">2025年01月 - 至今</p>
+                                        <p class="project-role">深度参与</p>
                                     </div>
-                                    <div class="contribution-text">
-                                        <h5>跨界模型迁移——用计算机视觉解析引文规律</h5>
-                                        <p>在这个由我独立主持的本科生项目中，我进行了一次大胆的跨界方法论尝试。核心创新在于，我将一个典型的科学计量学问题（引文模式分类），创造性地重新定义为一个图像识别问题。我通过将引文时间序列数据转换为引文曲线图（图像矩阵），成功地将计算机视觉领域的顶尖模型 Inception-v3 应用于此，并通过迁移学习高效地完成了训练。</p>
+                                    
+                                    <div class="project-item">
+                                        <div class="project-badge">山东师范大学学术明星项目</div>
+                                        <h5>基于 Inception-v3 迁移学习的引文模式分类</h5>
+                                        <p class="project-period">2019年01月 - 2019年06月</p>
+                                        <p class="project-role">主持</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="project-list">
-                            <h4>支撑项目列表</h4>
-                            <div class="project-items">
-                                <div class="project-item">
-                                    <div class="project-badge">NSF项目</div>
-                                    <h5>Collaborative Research: The scientific cost of isolationism</h5>
-                                    <p class="project-period">2025年01月 - 至今</p>
-                                    <p class="project-role">深度参与</p>
-                                </div>
-                                
-                                <div class="project-item">
-                                    <div class="project-badge">山东师范大学学术明星项目</div>
-                                    <h5>基于 Inception-v3 迁移学习的引文模式分类</h5>
-                                    <p class="project-period">2019年01月 - 2019年06月</p>
-                                    <p class="project-role">主持</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- 情报调研、跟踪 -->
-                <div class="direction-card">
-                    <div class="direction-header">
-                        <div class="direction-icon">
-                            <i class="fas fa-search-plus"></i>
-                        </div>
-                        <div class="direction-title">
-                            <h3>情报调研、跟踪</h3>
-                            <p>自动化情报获取与分析系统</p>
                         </div>
                     </div>
                     
-                    <div class="direction-content">
-                        <div class="contribution-section">
-                            <h4>核心贡献</h4>
-                            <div class="contribution-list">
-                                <div class="contribution-item">
-                                    <div class="contribution-icon">
-                                        <i class="fas fa-robot"></i>
+                    <!-- 情报调研、跟踪 -->
+                    <div class="tab-pane" id="proj-intelligence">
+                        <div class="direction-content">
+                            <div class="contribution-section">
+                                <h4>核心贡献</h4>
+                                <div class="contribution-list">
+                                    <div class="contribution-item">
+                                        <div class="contribution-icon">
+                                            <i class="fas fa-robot"></i>
+                                        </div>
+                                        <div class="contribution-text">
+                                            <h5>自动化、多源情报获取</h5>
+                                            <p>开发并部署了多个网络爬虫与数据跟踪脚本，能够7x24小时不间断地监控并获取来自学术数据库（理论前沿）、政府网站（如美国出口管制清单）、及开源情报源（如各国海洋科技动态）的关键信息。</p>
+                                        </div>
                                     </div>
-                                    <div class="contribution-text">
-                                        <h5>自动化、多源情报获取</h5>
-                                        <p>开发并部署了多个网络爬虫与数据跟踪脚本，能够7x24小时不间断地监控并获取来自学术数据库（理论前沿）、政府网站（如美国出口管制清单）、及开源情报源（如各国海洋科技动态）的关键信息。</p>
+                                    
+                                    <div class="contribution-item">
+                                        <div class="contribution-icon">
+                                            <i class="fas fa-cogs"></i>
+                                        </div>
+                                        <div class="contribution-text">
+                                            <h5>结构化解析与深度分析</h5>
+                                            <p>将采集到的海量非结构化数据进行自动化解析，转换为可供分析的结构化数据。在此基础上，运用比较分析框架（如分析全球五大创新城市的成功模式）与科学计量等方法进行深度挖掘，揭示隐藏的态势与规律。</p>
+                                        </div>
                                     </div>
-                                </div>
-                                
-                                <div class="contribution-item">
-                                    <div class="contribution-icon">
-                                        <i class="fas fa-cogs"></i>
-                                    </div>
-                                    <div class="contribution-text">
-                                        <h5>结构化解析与深度分析</h5>
-                                        <p>将采集到的海量非结构化数据进行自动化解析，转换为可供分析的结构化数据。在此基础上，运用比较分析框架（如分析全球五大创新城市的成功模式）与科学计量等方法进行深度挖掘，揭示隐藏的态势与规律。</p>
-                                    </div>
-                                </div>
-                                
-                                <div class="contribution-item">
-                                    <div class="contribution-icon">
-                                        <i class="fas fa-file-alt"></i>
-                                    </div>
-                                    <div class="contribution-text">
-                                        <h5>情报产品与决策支持</h5>
-                                        <p>能够将复杂的分析结果，提炼、编译为面向决策层的《动态监测报告》与《战略分析报告》。</p>
+                                    
+                                    <div class="contribution-item">
+                                        <div class="contribution-icon">
+                                            <i class="fas fa-file-alt"></i>
+                                        </div>
+                                        <div class="contribution-text">
+                                            <h5>情报产品与决策支持</h5>
+                                            <p>能够将复杂的分析结果，提炼、编译为面向决策层的《动态监测报告》与《战略分析报告》。</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <div class="project-list">
-                            <h4>支撑项目列表</h4>
-                            <div class="project-items">
-                                <div class="project-item">
-                                    <div class="project-badge">中科院文情专项</div>
-                                    <h5>文献情报中长期发展战略研究</h5>
-                                    <p class="project-period">2022年05月 - 2023年05月</p>
-                                    <p class="project-role">参与</p>
-                                </div>
-                                
-                                <div class="project-item">
-                                    <div class="project-badge">中科院发展规划局项目</div>
-                                    <h5>科技创新要素的区域分布规律以及国立科研机构机构在区域科技创新中的作用</h5>
-                                    <p class="project-period">2020年01月 - 2020年12月</p>
-                                    <p class="project-role">参与</p>
-                                </div>
-                                
-                                <div class="project-item">
-                                    <div class="project-badge">中科院文献情报中心情报部项目</div>
-                                    <h5>美国出口管制清单解析与挖掘</h5>
-                                    <p class="project-period">2020年01月 - 2023年12月</p>
-                                    <p class="project-role">参与</p>
-                                </div>
-                                
-                                <div class="project-item">
-                                    <div class="project-badge">中科院沈阳自动化研究所领域情报服务项目</div>
-                                    <h5>领域情报服务</h5>
-                                    <p class="project-period">2019年09月 - 2020年09月</p>
-                                    <p class="project-role">参与</p>
+                            
+                            <div class="project-list">
+                                <h4>支撑项目列表</h4>
+                                <div class="project-items">
+                                    <div class="project-item">
+                                        <div class="project-badge">中科院文情专项</div>
+                                        <h5>文献情报中长期发展战略研究</h5>
+                                        <p class="project-period">2022年05月 - 2023年05月</p>
+                                        <p class="project-role">参与</p>
+                                    </div>
+                                    
+                                    <div class="project-item">
+                                        <div class="project-badge">中科院发展规划局项目</div>
+                                        <h5>科技创新要素的区域分布规律以及国立科研机构机构在区域科技创新中的作用</h5>
+                                        <p class="project-period">2020年01月 - 2020年12月</p>
+                                        <p class="project-role">参与</p>
+                                    </div>
+                                    
+                                    <div class="project-item">
+                                        <div class="project-badge">中科院文献情报中心情报部项目</div>
+                                        <h5>美国出口管制清单解析与挖掘</h5>
+                                        <p class="project-period">2020年01月 - 2023年12月</p>
+                                        <p class="project-role">参与</p>
+                                    </div>
+                                    
+                                    <div class="project-item">
+                                        <div class="project-badge">中科院沈阳自动化研究所领域情报服务项目</div>
+                                        <h5>领域情报服务</h5>
+                                        <p class="project-period">2019年09月 - 2020年09月</p>
+                                        <p class="project-role">参与</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1104,6 +1064,16 @@
                             <p>北京市海淀区中关村北四环西路33号</p>
                         </div>
                     </div>
+                    <div class="contact-item">
+                        <i class="fab fa-weixin"></i>
+                        <div>
+                            <h3>微信</h3>
+                            <p>扫描二维码添加</p>
+                            <div class="wechat-qr">
+                                <img src="wechat_code.jpg" alt="微信二维码" class="qr-code">
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="contact-form">
                     <form>
@@ -1132,6 +1102,7 @@
                     <a href="https://www.linkedin.com/in/sunmengge" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     <a href="https://scholar.google.com/citations?user=sunmengge" class="social-link" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
                     <a href="mailto:sunmengge@mail.las.ac.cn" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="#" class="social-link" title="微信" onclick="window.utils.showWechatQR()"><i class="fab fa-weixin"></i></a>
                 </div>
                 <p>&copy; 2024 孙蒙鸽. 保留所有权利.</p>
             </div>

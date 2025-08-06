@@ -335,8 +335,8 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', optimizedScrollHandler);
 
     // 论文标签页功能
-    const tabButtons = document.querySelectorAll('.tab-btn');
-    const tabPanes = document.querySelectorAll('.tab-pane');
+    const tabButtons = document.querySelectorAll('.papers-tabs .tab-btn');
+    const tabPanes = document.querySelectorAll('.papers-tabs .tab-pane');
 
     tabButtons.forEach(button => {
         button.addEventListener('click', function() {
@@ -345,6 +345,24 @@ document.addEventListener('DOMContentLoaded', function() {
             // 移除所有活动状态
             tabButtons.forEach(btn => btn.classList.remove('active'));
             tabPanes.forEach(pane => pane.classList.remove('active'));
+            
+            // 添加活动状态
+            this.classList.add('active');
+            document.getElementById(targetTab).classList.add('active');
+        });
+    });
+
+    // 科研项目标签页功能
+    const projectTabButtons = document.querySelectorAll('.projects-tabs .tab-btn');
+    const projectTabPanes = document.querySelectorAll('.projects-tabs .tab-pane');
+
+    projectTabButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const targetTab = this.getAttribute('data-tab');
+            
+            // 移除所有活动状态
+            projectTabButtons.forEach(btn => btn.classList.remove('active'));
+            projectTabPanes.forEach(pane => pane.classList.remove('active'));
             
             // 添加活动状态
             this.classList.add('active');
@@ -379,5 +397,36 @@ window.utils = {
     showNotification: function(message, type = 'info') {
         // 这里可以调用之前定义的showNotification函数
         console.log(`${type}: ${message}`);
+    },
+
+    // 显示微信二维码弹窗
+    showWechatQR: function() {
+        // 创建弹窗
+        const modal = document.createElement('div');
+        modal.className = 'wechat-modal';
+        modal.innerHTML = `
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <h3>微信联系方式</h3>
+                <p>扫描二维码添加微信</p>
+                <img src="wechat_code.jpg" alt="微信二维码" class="modal-qr">
+            </div>
+        `;
+        
+        // 添加到页面
+        document.body.appendChild(modal);
+        
+        // 关闭弹窗功能
+        const closeBtn = modal.querySelector('.close-btn');
+        closeBtn.onclick = function() {
+            document.body.removeChild(modal);
+        };
+        
+        // 点击背景关闭弹窗
+        modal.onclick = function(e) {
+            if (e.target === modal) {
+                document.body.removeChild(modal);
+            }
+        };
     }
 }; 
