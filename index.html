@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>孙蒙鸽 - 个人简历</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">孙蒙鸽</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">教育经历</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#papers" class="nav-link">科研论文</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">科研项目</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#awards" class="nav-link">荣誉奖项</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#reports" class="nav-link">学术报告</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">技能</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">联系</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 首页部分 -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">你好，我是 <span class="highlight">孙蒙鸽</span></h1>
+                <p class="hero-description">
+                    专注于科学计量学、知识图谱与智能情报研究，在AIGC技术应用、AI4Science等领域有深入研究。
+                </p>
+                
+                <!-- 数字统计展示 -->
+                <div class="hero-stats">
+                    <div class="stat-card">
+                        <div class="stat-number">21</div>
+                        <div class="stat-label">发表论文</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">10</div>
+                        <div class="stat-label">一作论文</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">168</div>
+                        <div class="stat-label">总被引次数</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">17</div>
+                        <div class="stat-label">参与项目</div>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">查看项目</a>
+                    <a href="#contact" class="btn btn-secondary">联系我</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="profile-card">
+                    <div class="profile-avatar">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="profile-info">
+                        <h3>孙蒙鸽</h3>
+                        <p>科学计量学博士</p>
+                        <p>中国科学院大学</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 教育经历部分 -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">教育经历</h2>
+            <div class="education-simple">
+                <div class="education-card">
+                    <div class="education-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h3>中国科学院大学（双一流）</h3>
+                            <p>信息管理专业 | 博士研究生</p>
+                            <span class="education-year">2022.09 - 2025.12</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-card">
+                    <div class="education-header">
+                        <i class="fas fa-university"></i>
+                        <div>
+                            <h3>Georgia Institute of Technology（QS 100）</h3>
+                            <p>School of Public Policy | 公派博士生</p>
+                            <span class="education-year">2024.11 - 2025.12</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-card">
+                    <div class="education-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <div>
+                            <h3>中国科学院大学（双一流）</h3>
+                            <p>信息管理专业 | 硕士研究生</p>
+                            <span class="education-year">2019.09 - 2022.06</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="education-card">
+                    <div class="education-header">
+                        <i class="fas fa-university"></i>
+                        <div>
+                            <h3>山东师范大学</h3>
+                            <p>信息管理与信息系统专业 | 学士</p>
+                            <span class="education-year">2015.09 - 2019.06</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 科研论文部分 -->
+    <section id="papers" class="papers">
+        <div class="container">
+            <h2 class="section-title">科研论文</h2>
+            <div class="papers-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="aigc">AIGC/智能情报</button>
+                    <button class="tab-btn" data-tab="ai4science">AI4Science</button>
+                    <button class="tab-btn" data-tab="cross">交叉应用</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="aigc">
+                        <div class="paper-list">
+                            <div class="paper-item">
+                                <div class="paper-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="paper-content">
+                                    <h4>GPT技术变革对基础科学研究的影响分析</h4>
+                                    <p class="paper-authors">孙蒙鸽, 韩涛, 王燕鹏等</p>
+                                    <p class="paper-journal">中国科学院院刊（CSSCI 核心）, 2023, 38(08):1212-1224</p>
+                                </div>
+                            </div>
+                            <div class="paper-item">
+                                <div class="paper-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="paper-content">
+                                    <h4>面向短文本-多领域科技实体抽取的提示工程构建研究</h4>
+                                    <p class="paper-authors">孙蒙鸽, 王燕鹏, 付芸等</p>
+                                    <p class="paper-journal">数据分析与知识发现（CSSCI 核心）, 2025</p>
+                                </div>
+                            </div>
+                            <div class="paper-item">
+                                <div class="paper-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="paper-content">
+                                    <h4>智能体赋能科研知识服务的路径解析</h4>
+                                    <p class="paper-authors">孙蒙鸽, 付芸, 刘细文</p>
+                                    <p class="paper-journal">智库理论与实践（CSSCI 核心）, 2025, 10(01):3-18</p>
+                                </div>
+                            </div>
+                            <div class="paper-item">
+                                <div class="paper-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="paper-content">
+                                    <h4>从管理信息系统到情报智能体：重塑科技情报工作范式</h4>
+                                    <p class="paper-authors">刘细文, 孙蒙鸽, 付芸</p>
+                                    <p class="paper-journal">图书情报工作（CSSCI 核心）, 2025</p>
+                                </div>
+                            </div>
+                            <div class="paper-item">
+                                <div class="paper-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="paper-content">
+                                    <h4>DIKIW逻辑链下GPT大模型对文献情报工作的潜在影响分析</h4>
+                                    <p class="paper-authors">刘细文, 孙蒙鸽, 王茜等</p>
+                                    <p class="paper-journal">图书情报工作（CSSCI 核心）, 2023, 67(21):3-12</p>
+                                </div>
+                            </div>
+                            <div class="paper-item">
+                                <div class="paper-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="paper-content">
+                                    <a href="https://ceur-ws.org/Vol-3745/paper18.pdf" target="_blank">Research on Fine-grained S&T Entity Identification with Contextual Semantics in Think-Tank Text</a>
+                                    <p class="paper-authors">Mengge Sun, Yanpeng Wang, Yang Zhao</p>
+                                    <p class="paper-journal">Iconference2024, 2024,04. in Changchun China</p>
+                                </div>
+                            </div>
+                            
+                            <div class="paper-item">
+                                <div class="paper-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="paper-content">
+                                    <h4>基于NE-GraphSAGE和大语言模型的前沿研究热点自动探测研究</h4>
+                                    <p class="paper-authors">田雪灿, 孙蒙鸽, 胡懋地</p>
+                                    <p class="paper-journal">数据分析与知识发现（CSSCI 核心）, 2025</p>
+                                </div>
+                            </div>
+                            <div class="paper-item">
+                                <div class="paper-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="paper-content">
+                                    <h4>驱动情报工作范式变革的情报智能体技术解构</h4>
+                                    <p class="paper-authors">刘细文, 付芸, 孙蒙鸽</p>
+                                    <p class="paper-journal">图书情报工作（CSSCI 核心）, 2025, 69(01):4-15</p>
+                                </div>
+                            </div>
+                            <div class="paper-item">
+                                <div class="paper-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="paper-content">
+                                    <h4>基于智能文本挖掘的技术水平预测研究——以声呐技术为例</h4>
+                                    <p class="paper-authors">郭世杰, 董璐, 孙蒙鸽</p>
+                                    <p class="paper-journal">情报理论与实践（CSSCI 核心）, 2024, 47(05):12-17+38</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="ai4science">
+                        <div class="paper-list">
+                            <div class="paper-item">
+                                <div class="paper-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="paper-content">
+                                    <h4><a href="https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2023.1131590/full" target="_blank">Evaluation of policy synergy in coastal ocean pollution prevention and control: The case from China</a></h4>
+                                    <p class="paper-authors">Yao Chengyan, Mengge Sun, and Lin Liu</p>
+                                    <p class="paper-journal">Frontiers in Marine Science, 2023, 10: 1131590</p>
+                                </div>
+                            </div>
+                            <div class="paper-item">
+                                <div class="paper-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="paper-content">
+                                    <h4><a href="https://www.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFD&dbname=CJFDLAST2022&filename=TSQB202203015&uniplatform=OVERSEA&v=rdrk9kGHGucoM041OfflbtMIUe1DoVpZmKunhP3gfEwQOyot7HhWxiDKPQS4O7rI" target="_blank">新兴技术的多指标量化识别研究——基于向量表征方法的探索</a></h4>
+                                    <p class="paper-authors">孙蒙鸽, 王燕鹏, 韩涛等</p>
+                                    <p class="paper-journal">图书情报工作（CSSCI 核心）, 2022, 66(03):130-139</p>
+                                </div>
+                            </div>
+                            <div class="paper-item">
+                                <div class="paper-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="paper-content">
+                                    <h4>科研智能化新趋势下知识服务的挑战与机遇</h4>
+                                    <p class="paper-authors">孙蒙鸽, 黄雨馨, 韩涛等</p>
+                                    <p class="paper-journal">情报杂志（CSSCI 核心）, 2022, 41(06):173-181+107</p>
+                                </div>
+                            </div>
+                            <div class="paper-item">
+                                <div class="paper-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="paper-content">
+                                    <h4>科研智能化与知识服务：内涵、实现与机遇</h4>
+                                    <p class="paper-authors">孙蒙鸽, 韩涛</p>
+                                    <p class="paper-journal">情报理论与实践（CSSCI 核心）, 2021, 44(10):41-49</p>
+                                </div>
+                            </div>
+                            <div class="paper-item">
+                                <div class="paper-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="paper-content">
+                                    <h4>数智驱动下"智能科学家"建设的机遇与挑战</h4>
+                                    <p class="paper-authors">陈昱成, 孙蒙鸽, 韩涛等</p>
+                                    <p class="paper-journal">情报理论与实践（CSSCI 核心）, 2024, 47(03):45-53+103</p>
+                                </div>
+                            </div>
+                            <div class="paper-item">
+                                <div class="paper-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="paper-content">
+                                    <h4>ULEO：表示合成实验规程的实验操作统一语言</h4>
+                                    <p class="paper-authors">付芸, 朱丽雅, 李丹, 孙蒙鸽</p>
+                                    <p class="paper-journal">数据分析与知识发现（CSSCI 核心）, 2024, 8(01):30-39</p>
+                                </div>
+                            </div>
+                            <div class="paper-item">
+                                <div class="paper-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="paper-content">
+                                    <h4>科研智能化趋势下科研数据研究</h4>
+                                    <p class="paper-authors">张婧睿, 孙蒙鸽, 韩涛</p>
+                                    <p class="paper-journal">科学观察, 2023, 18(04):49-61</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="cross">
+                        <div class="paper-list">
+                            <div class="paper-item">
+                                <div class="paper-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="paper-content">
+                                    <h4>Understanding the Hierarchical Relationships in Female Sex Workers' Social Networks Based on Knowledge, Attitude, and Practice</h4>
+                                    <p class="paper-authors">Donglei Xian, Mengge Sun, Wang J, Yang Z, Hu B</p>
+                                    <p class="paper-journal">Int J Environ Res Public Health, 2019, 16(20):3841</p>
+                                </div>
+                            </div>
+                            <div class="paper-item">
+                                <div class="paper-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="paper-content">
+                                    <h4>"互联网+"下城市出租车服务模式对比研究——基于出租车服务利润率的测算与分析</h4>
+                                    <p class="paper-authors">胡蓓蓓, 孔亚文, 孙蒙鸽</p>
+                                    <p class="paper-journal">价格理论与实践（CSSCI核心）, 2017(02):142-145</p>
+                                </div>
+                            </div>
+                            <div class="paper-item">
+                                <div class="paper-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="paper-content">
+                                    <h4>加州大学数字图书馆的数据驱动战略实践与启示</h4>
+                                    <p class="paper-authors">王茜, 孙蒙鸽, 郑新曼等</p>
+                                    <p class="paper-journal">数字图书馆论坛（CSSCI 核心）, 2023, 19(11):10-19</p>
+                                </div>
+                            </div>
+                            <div class="paper-item">
+                                <div class="paper-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="paper-content">
+                                    <h4>Understanding the unbalance of interest in taxi market based on drivers' service profit margins</h4>
+                                    <p class="paper-authors">Hu Beibei, Kong Yawen, Sun Mengge, Dong Xianlei, Zong G</p>
+                                    <p class="paper-journal">PLoS One, 2018, 13(6):e0198491</p>
+                                </div>
+                            </div>
+                            <div class="paper-item">
+                                <div class="paper-icon">
+                                    <i class="fas fa-file-alt"></i>
+                                </div>
+                                <div class="paper-content">
+                                    <h4>A Weighted Bayesian Probability Model of Mental Disorders and Sleep Quality in Different Age Groups</h4>
+                                    <p class="paper-authors">Zhihan Yang, Mengge Sun, Yan Han</p>
+                                    <p class="paper-journal">2018 IEEE 3rd International Conference on Cloud Computing and Internet of Things (CCIOT), 2018: 489-493</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 科研项目部分 -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">科研项目</h2>
+            <p class="section-subtitle">我的研究兴趣在于探索并应用前沿AI技术解决复杂的情报分析与科学发现问题。从AIGC的前沿理论探索，到AI4S的具体场景赋能，再到新兴技术识别系统的端到端构建，我的项目经历包含了从"方法论创新"到"应用实践"的完整路径。</p>
+            
+            <div class="research-directions">
+                <!-- AIGC/智能情报方向 -->
+                <div class="direction-card">
+                    <div class="direction-header">
+                        <div class="direction-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="direction-title">
+                            <h3>AIGC/智能情报方向</h3>
+                            <p>前沿AI技术在情报分析中的应用与创新</p>
+                        </div>
+                    </div>
+                    
+                    <div class="direction-content">
+                        <div class="contribution-section">
+                            <h4>核心贡献</h4>
+                            <div class="contribution-list">
+                                <div class="contribution-item">
+                                    <div class="contribution-icon">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <div class="contribution-text">
+                                        <h5>理论研究</h5>
+                                        <p>通过深度文献调研，深度剖析了大语言模型等相关AIGC技术对情报学研究、情报工作业务流程等的潜在影响。研究成果有效支撑了国家社科重大及自然科学基金重点等项目的顶层设计与申报工作。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contribution-item">
+                                    <div class="contribution-icon">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <div class="contribution-text">
+                                        <h5>技术趋势追踪与实证评测</h5>
+                                        <p>负责关键AIGC技术（大语言模型、智能体）的趋势追踪与实证评测，通过系统性实验，为智能情报关键技术发展提供了前瞻性洞察与可行性建议。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contribution-item">
+                                    <div class="contribution-icon">
+                                        <i class="fas fa-cogs"></i>
+                                    </div>
+                                    <div class="contribution-text">
+                                        <h5>算法自研与工程化</h5>
+                                        <p>针对中科院在重大科技方向决策中的痛点，独立研发"科技问题抽取"与"科技问题评价"核心算法，并将其成功工程化、落地为"重大科技问题智能态势感知与分析平台"，目前已服务于中科院相关部门的项目部署工作。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contribution-item">
+                                    <div class="contribution-icon">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <div class="contribution-text">
+                                        <h5>数据构建与服务</h5>
+                                        <p>负责动态更新"前沿科学问题"和"重大科技需求"清单数据，为情报决策提供了高质量的数据支撑。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-list">
+                            <h4>支撑项目列表</h4>
+                            <div class="project-items">
+                                <div class="project-item">
+                                    <div class="project-badge">国家社科重大项目</div>
+                                    <h5>数智转型背景下智能情报关键技术应用研究</h5>
+                                    <p class="project-period">2024年01月 - 至今</p>
+                                    <p class="project-role">深度参与</p>
+                                </div>
+                                
+                                <div class="project-item">
+                                    <div class="project-badge">国家自然科学基金重点项目</div>
+                                    <h5>数智赋能的科技信息资源与知识管理理论变革</h5>
+                                    <p class="project-period">2023年01月 - 至今</p>
+                                    <p class="project-role">深度参与</p>
+                                </div>
+                                
+                                <div class="project-item">
+                                    <div class="project-badge">中科院文情专项</div>
+                                    <h5>面向重大科技问题场景的智能情报分析模型研究与领域示范</h5>
+                                    <p class="project-period">2022年01月 - 至今</p>
+                                    <p class="project-role">深度参与</p>
+                                </div>
+                                
+                                <div class="project-item">
+                                    <div class="project-badge">中科院战略研究专项</div>
+                                    <h5>"两个清单"编制项目</h5>
+                                    <p class="project-period">2023年01月 - 2024年01月</p>
+                                    <p class="project-role">参与</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- AI for Science方向 -->
+                <div class="direction-card">
+                    <div class="direction-header">
+                        <div class="direction-icon">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <div class="direction-title">
+                            <h3>AI for Science方向</h3>
+                            <p>AI技术在科学研究中的创新应用</p>
+                        </div>
+                    </div>
+                    
+                    <div class="direction-content">
+                        <div class="contribution-section">
+                            <h4>核心贡献</h4>
+                            <div class="contribution-list">
+                                <div class="contribution-item">
+                                    <div class="contribution-icon">
+                                        <i class="fas fa-lightbulb"></i>
+                                    </div>
+                                    <div class="contribution-text">
+                                        <h5>AI4Science 战略情报支持</h5>
+                                        <p>负责跟踪、研判全球 AI for Science 的前沿动态与核心技术，提炼并撰写深度分析报告，研究成果直接支撑了团队负责人在雁栖湖青年论坛以及周琪校长在中关村论坛等重要场合的大会报告。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contribution-item">
+                                    <div class="contribution-icon">
+                                        <i class="fas fa-project-diagram"></i>
+                                    </div>
+                                    <div class="contribution-text">
+                                        <h5>领域应用实践</h5>
+                                        <p>负责从文献数据处理、关键实体与关系的标注，到最终构建该领域专用知识图谱的全过程，为后续利用AI进行实验设计与结果推理打下了坚实的数据与知识基础。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-list">
+                            <h4>支撑项目列表</h4>
+                            <div class="project-items">
+                                <div class="project-item">
+                                    <div class="project-badge">国家社会科学基金项目</div>
+                                    <h5>支撑AI4Science的科技图书馆知识服务内容研究</h5>
+                                    <p class="project-period">2021年01月 - 2023年12月</p>
+                                    <p class="project-role">深度参与</p>
+                                </div>
+                                
+                                <div class="project-item">
+                                    <div class="project-badge">中科院文情专项</div>
+                                    <h5>"智慧数据+AI"支撑科学创新实验方法的推理发现研究</h5>
+                                    <p class="project-period">2022年01月 - 2024年09月</p>
+                                    <p class="project-role">参与</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 新兴技术识别 -->
+                <div class="direction-card">
+                    <div class="direction-header">
+                        <div class="direction-icon">
+                            <i class="fas fa-radar"></i>
+                        </div>
+                        <div class="direction-title">
+                            <h3>新兴技术识别</h3>
+                            <p>多源数据驱动的技术趋势分析与预测</p>
+                        </div>
+                    </div>
+                    
+                    <div class="direction-content">
+                        <div class="contribution-section">
+                            <h4>核心贡献</h4>
+                            <div class="contribution-list">
+                                <div class="contribution-item">
+                                    <div class="contribution-icon">
+                                        <i class="fas fa-spider"></i>
+                                    </div>
+                                    <div class="contribution-text">
+                                        <h5>多源异构数据获取与解析</h5>
+                                        <p>开发可定制的网络爬虫与数据解析模型，能够自动化地从Scopus等文献数据库（曾处理超17万篇航空文献）、网站、PDF文档中获取并结构化目标数据。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contribution-item">
+                                    <div class="contribution-icon">
+                                        <i class="fas fa-brain"></i>
+                                    </div>
+                                    <div class="contribution-text">
+                                        <h5>核心智能分析引擎</h5>
+                                        <p>搭建了一套以NLP和机器学习为核心的分析引擎，负责其中关键算法的实现与集成。技术栈包括：主题发现：术语抽取、主题识别；趋势预警：基于 Kleinberg 算法的突发检测；关联与预测：向量表征、链路预测。该引擎能够有效扫描技术"弱信号"，并对发展态势进行量化分析与预判。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contribution-item">
+                                    <div class="contribution-icon">
+                                        <i class="fas fa-users"></i>
+                                    </div>
+                                    <div class="contribution-text">
+                                        <h5>领域服务</h5>
+                                        <p>研究成果、技术平台已成功服务于中国航空研究院、中国船舶集团等客户，为其在新兴技术领域的布局提供了直观、高效的决策工具。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-list">
+                            <h4>支撑项目列表</h4>
+                            <div class="project-items">
+                                <div class="project-item">
+                                    <div class="project-badge">中国航空研究院项目</div>
+                                    <h5>航空领域新兴技术识别</h5>
+                                    <p class="project-period">2021年01月 - 2022年01月</p>
+                                    <p class="project-role">深度参与</p>
+                                </div>
+                                
+                                <div class="project-item">
+                                    <div class="project-badge">中国船舶集团项目</div>
+                                    <h5>海洋领域新兴技术识别</h5>
+                                    <p class="project-period">2022年01月 - 2022年12月</p>
+                                    <p class="project-role">深度参与</p>
+                                </div>
+                                
+                                <div class="project-item">
+                                    <div class="project-badge">中科院发展规划局战略研究专项</div>
+                                    <h5>重大共性基础性技术核心问题识别与研发模式研究</h5>
+                                    <p class="project-period">2023年01月 - 2025年01月</p>
+                                    <p class="project-role">参与</p>
+                                </div>
+                                
+                                <div class="project-item">
+                                    <div class="project-badge">中国科技技术发展战略研究院</div>
+                                    <h5>新兴技术弱信号扫描预判方法研究</h5>
+                                    <p class="project-period">2022年01月 - 2023年01月</p>
+                                    <p class="project-role">参与</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 数据科学交叉 -->
+                <div class="direction-card">
+                    <div class="direction-header">
+                        <div class="direction-icon">
+                            <i class="fas fa-chart-bar"></i>
+                        </div>
+                        <div class="direction-title">
+                            <h3>数据科学交叉</h3>
+                            <p>跨学科方法论的创新应用</p>
+                        </div>
+                    </div>
+                    
+                    <div class="direction-content">
+                        <div class="contribution-section">
+                            <h4>核心贡献</h4>
+                            <div class="contribution-list">
+                                <div class="contribution-item">
+                                    <div class="contribution-icon">
+                                        <i class="fas fa-globe"></i>
+                                    </div>
+                                    <div class="contribution-text">
+                                        <h5>前沿因果推断——量化地缘政治对科学的影响</h5>
+                                        <p>该项目主要是公派期间参与的外导项目。该项目旨在探究地缘政治冲突与科学脱钩对国家科研发展的影响。在该项目中，独立运用合成控制法 (SCM)，以英国脱欧和俄乌冲突为自然实验，量化评估了地缘政治冲突对国家科研产出的因果效应。研究成果作为第一作者在国际顶级会议ICSSI 2025上进行报告，揭示了经费重分配与科研人员流动对国家科研轨迹的关键影响。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contribution-item">
+                                    <div class="contribution-icon">
+                                        <i class="fas fa-eye"></i>
+                                    </div>
+                                    <div class="contribution-text">
+                                        <h5>跨界模型迁移——用计算机视觉解析引文规律</h5>
+                                        <p>在这个由我独立主持的本科生项目中，我进行了一次大胆的跨界方法论尝试。核心创新在于，我将一个典型的科学计量学问题（引文模式分类），创造性地重新定义为一个图像识别问题。我通过将引文时间序列数据转换为引文曲线图（图像矩阵），成功地将计算机视觉领域的顶尖模型 Inception-v3 应用于此，并通过迁移学习高效地完成了训练。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-list">
+                            <h4>支撑项目列表</h4>
+                            <div class="project-items">
+                                <div class="project-item">
+                                    <div class="project-badge">NSF项目</div>
+                                    <h5>Collaborative Research: The scientific cost of isolationism</h5>
+                                    <p class="project-period">2025年01月 - 至今</p>
+                                    <p class="project-role">深度参与</p>
+                                </div>
+                                
+                                <div class="project-item">
+                                    <div class="project-badge">山东师范大学学术明星项目</div>
+                                    <h5>基于 Inception-v3 迁移学习的引文模式分类</h5>
+                                    <p class="project-period">2019年01月 - 2019年06月</p>
+                                    <p class="project-role">主持</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 情报调研、跟踪 -->
+                <div class="direction-card">
+                    <div class="direction-header">
+                        <div class="direction-icon">
+                            <i class="fas fa-search-plus"></i>
+                        </div>
+                        <div class="direction-title">
+                            <h3>情报调研、跟踪</h3>
+                            <p>自动化情报获取与分析系统</p>
+                        </div>
+                    </div>
+                    
+                    <div class="direction-content">
+                        <div class="contribution-section">
+                            <h4>核心贡献</h4>
+                            <div class="contribution-list">
+                                <div class="contribution-item">
+                                    <div class="contribution-icon">
+                                        <i class="fas fa-robot"></i>
+                                    </div>
+                                    <div class="contribution-text">
+                                        <h5>自动化、多源情报获取</h5>
+                                        <p>开发并部署了多个网络爬虫与数据跟踪脚本，能够7x24小时不间断地监控并获取来自学术数据库（理论前沿）、政府网站（如美国出口管制清单）、及开源情报源（如各国海洋科技动态）的关键信息。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contribution-item">
+                                    <div class="contribution-icon">
+                                        <i class="fas fa-cogs"></i>
+                                    </div>
+                                    <div class="contribution-text">
+                                        <h5>结构化解析与深度分析</h5>
+                                        <p>将采集到的海量非结构化数据进行自动化解析，转换为可供分析的结构化数据。在此基础上，运用比较分析框架（如分析全球五大创新城市的成功模式）与科学计量等方法进行深度挖掘，揭示隐藏的态势与规律。</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="contribution-item">
+                                    <div class="contribution-icon">
+                                        <i class="fas fa-file-alt"></i>
+                                    </div>
+                                    <div class="contribution-text">
+                                        <h5>情报产品与决策支持</h5>
+                                        <p>能够将复杂的分析结果，提炼、编译为面向决策层的《动态监测报告》与《战略分析报告》。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="project-list">
+                            <h4>支撑项目列表</h4>
+                            <div class="project-items">
+                                <div class="project-item">
+                                    <div class="project-badge">中科院文情专项</div>
+                                    <h5>文献情报中长期发展战略研究</h5>
+                                    <p class="project-period">2022年05月 - 2023年05月</p>
+                                    <p class="project-role">参与</p>
+                                </div>
+                                
+                                <div class="project-item">
+                                    <div class="project-badge">中科院发展规划局项目</div>
+                                    <h5>科技创新要素的区域分布规律以及国立科研机构机构在区域科技创新中的作用</h5>
+                                    <p class="project-period">2020年01月 - 2020年12月</p>
+                                    <p class="project-role">参与</p>
+                                </div>
+                                
+                                <div class="project-item">
+                                    <div class="project-badge">中科院文献情报中心情报部项目</div>
+                                    <h5>美国出口管制清单解析与挖掘</h5>
+                                    <p class="project-period">2020年01月 - 2023年12月</p>
+                                    <p class="project-role">参与</p>
+                                </div>
+                                
+                                <div class="project-item">
+                                    <div class="project-badge">中科院沈阳自动化研究所领域情报服务项目</div>
+                                    <h5>领域情报服务</h5>
+                                    <p class="project-period">2019年09月 - 2020年09月</p>
+                                    <p class="project-role">参与</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- 荣誉奖项部分 -->
+    <section id="awards" class="awards">
+        <div class="container">
+            <h2 class="section-title">荣誉奖项</h2>
+            <div class="awards-grid">
+                <div class="award-item">
+                    <i class="fas fa-trophy"></i>
+                    <div class="award-content">
+                        <h4>情报科学创新团队奖（成员）</h4>
+                        <p>2025年6月</p>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <i class="fas fa-medal"></i>
+                    <div class="award-content">
+                        <h4>博士研究生国家奖学金</h4>
+                        <p>2024年11月</p>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <i class="fas fa-star"></i>
+                    <div class="award-content">
+                        <h4>朱李月华奖学金</h4>
+                        <p>2024年10月</p>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <i class="fas fa-award"></i>
+                    <div class="award-content">
+                        <h4>李炳穆一等奖学金</h4>
+                        <p>2023年12月</p>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <i class="fas fa-fire"></i>
+                    <div class="award-content">
+                        <h4>《中国科学院院刊》最受公众关注十大热文</h4>
+                        <p>2023年12月</p>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div class="award-content">
+                        <h4>硕士研究生国家奖学金</h4>
+                        <p>2021年11月</p>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <i class="fas fa-user-graduate"></i>
+                    <div class="award-content">
+                        <h4>中国科学院大学三好学生</h4>
+                        <p>2019-2024年度</p>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <i class="fas fa-user-tie"></i>
+                    <div class="award-content">
+                        <h4>中国科学院文献情报中心优秀研究生</h4>
+                        <p>2020-2023年度</p>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <i class="fas fa-users"></i>
+                    <div class="award-content">
+                        <h4>全国高校数据驱动创新研究大赛优秀奖（队长）</h4>
+                        <p>2021年9月</p>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <i class="fas fa-certificate"></i>
+                    <div class="award-content">
+                        <h4>山东省优秀毕业生</h4>
+                        <p>2019年6月</p>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <i class="fas fa-calculator"></i>
+                    <div class="award-content">
+                        <h4>美国数学建模比赛一等奖</h4>
+                        <p>2018年4月</p>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <i class="fas fa-chart-line"></i>
+                    <div class="award-content">
+                        <h4>亚太地区数学建模比赛二等奖</h4>
+                        <p>2018年2月</p>
+                    </div>
+                </div>
+                <div class="award-item">
+                    <i class="fas fa-chart-bar"></i>
+                    <div class="award-content">
+                        <h4>全国大学生数学建模比赛一等奖</h4>
+                        <p>2017年10月</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 学术报告部分 -->
+    <section id="reports" class="reports">
+        <div class="container">
+            <h2 class="section-title">学术报告</h2>
+            <div class="reports-list">
+                <div class="report-item">
+                    <div class="report-icon">
+                        <i class="fas fa-presentation"></i>
+                    </div>
+                    <div class="report-content">
+                        <h4>Estimating the scientific cost of nationalism: leveraging Brexit and the Crimean Crisis as the natural experiments</h4>
+                        <p class="report-conference">ICSSI2025 (International Conference on the Science of Science and Innovation)</p>
+                        <p class="report-date">2025年06月</p>
+                    </div>
+                </div>
+                <div class="report-item">
+                    <div class="report-icon">
+                        <i class="fas fa-presentation"></i>
+                    </div>
+                    <div class="report-content">
+                        <h4>Research on Fine-grained S&T Entity Identification with Contextual Semantics in Think-Tank Text</h4>
+                        <p class="report-conference">Iconference2024</p>
+                        <p class="report-date">2024年03月</p>
+                    </div>
+                </div>
+                <div class="report-item">
+                    <div class="report-icon">
+                        <i class="fas fa-presentation"></i>
+                    </div>
+                    <div class="report-content">
+                        <h4>基于智能文本挖掘的技术水平预测研究--以声纳技术为例</h4>
+                        <p class="report-conference">中国国防科学技术信息年会</p>
+                        <p class="report-date">2023年08月</p>
+                    </div>
+                </div>
+                <div class="report-item">
+                    <div class="report-icon">
+                        <i class="fas fa-presentation"></i>
+                    </div>
+                    <div class="report-content">
+                        <h4>基于链路预测及向量表征模型的新兴技术识别研究与实现</h4>
+                        <p class="report-conference">第17届中国网络科学论坛</p>
+                        <p class="report-date">2021年05月</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 技能部分 -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">技能专长</h2>
+            <div class="skills-grid">
+                <!-- 语言能力 -->
+                <div class="skill-category language-skills">
+                    <h3><i class="fas fa-language"></i> 语言能力</h3>
+                    <div class="language-cards">
+                        <div class="language-card">
+                            <div class="language-header">
+                                <i class="fas fa-flag"></i>
+                                <h4>英语</h4>
+                            </div>
+                            <div class="language-details">
+                                <div class="language-item">
+                                    <span class="skill-name">雅思阅读</span>
+                                    <span class="skill-score">9.0/9.0</span>
+                                    <div class="skill-badge perfect">满分</div>
+                                </div>
+                                <div class="language-item">
+                                    <span class="skill-name">学术写作</span>
+                                    <span class="skill-score">优秀</span>
+                                    <div class="skill-badge">国际会议论文</div>
+                                </div>
+                                <div class="language-item">
+                                    <span class="skill-name">口语交流</span>
+                                    <span class="skill-score">流利</span>
+                                    <div class="skill-badge">国际会议报告</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 编程与工具 -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> 编程与工具</h3>
+                    <div class="tool-grid">
+                        <div class="tool-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                            <div class="tool-level">熟练</div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                            <div class="tool-level">熟练</div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>R</span>
+                            <div class="tool-level">基础</div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                            <div class="tool-level">熟练</div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-cloud"></i>
+                            <span>Linux</span>
+                            <div class="tool-level">熟练</div>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-file-alt"></i>
+                            <span>LaTeX</span>
+                            <div class="tool-level">熟练</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 核心技术能力 -->
+                <div class="skill-category">
+                    <h3><i class="fas fa-brain"></i> AIGC/智能情报</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">大语言模型应用</span>
+                            </div>
+                            <div class="skill-detail">GPT技术研究、智能体开发、提示工程优化</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">智能情报分析</span>
+                            </div>
+                            <div class="skill-detail">科技问题抽取、态势感知、决策支持</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">算法工程化</span>
+                            </div>
+                            <div class="skill-detail">核心算法研发、平台部署、系统集成</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-chart-line"></i> AI4Science</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">新兴技术识别</span>
+                            </div>
+                            <div class="skill-detail">弱信号扫描、趋势预警、技术预测</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">向量表征</span>
+                            </div>
+                            <div class="skill-detail">文本向量化、语义相似度、知识图谱构建</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">科研智能化</span>
+                            </div>
+                            <div class="skill-detail">实验设计、数据驱动、智能推理</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3><i class="fas fa-microscope"></i> 科学计量学</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">引文分析</span>
+                            </div>
+                            <div class="skill-detail">引文网络、影响因子、学术影响力评估</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">数据挖掘</span>
+                            </div>
+                            <div class="skill-detail">多源数据融合、模式识别、知识发现</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">因果推断</span>
+                            </div>
+                            <div class="skill-detail">合成控制法、自然实验、政策评估</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 联系部分 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">联系我</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>邮箱</h3>
+                            <p>sunmengge@mail.las.ac.cn</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>电话</h3>
+                            <p>+86 188-0115-6316</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>地址</h3>
+                            <p>北京市海淀区中关村北四环西路33号</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="您的姓名" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="您的邮箱" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="您的消息" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">发送消息</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="https://github.com/sunmengge" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sunmengge" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://scholar.google.com/citations?user=sunmengge" class="social-link" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="mailto:sunmengge@mail.las.ac.cn" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+                <p>&copy; 2024 孙蒙鸽. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
