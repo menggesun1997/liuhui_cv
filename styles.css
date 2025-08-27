@@ -6,20 +6,20 @@
 }
 
 :root {
-    --primary-color: #6366f1;
-    --secondary-color: #8b5cf6;
-    --accent-color: #06b6d4;
+    --primary-color: #c41e3a;
+    --secondary-color: #dc2626;
+    --accent-color: #ef4444;
     --text-primary: #1f2937;
     --text-secondary: #6b7280;
     --bg-primary: #ffffff;
-    --bg-secondary: #f9fafb;
+    --bg-secondary: #fef2f2;
     --bg-dark: #111827;
-    --border-color: #e5e7eb;
+    --border-color: #fecaca;
     --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
     --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    --gradient-primary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
-    --gradient-secondary: linear-gradient(135deg, #06b6d4 0%, #3b82f6 100%);
+    --gradient-primary: linear-gradient(135deg, #c41e3a 0%, #dc2626 100%);
+    --gradient-secondary: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
 }
 
 body {
@@ -123,6 +123,18 @@ body {
     align-items: center;
     background: var(--bg-secondary);
     padding-top: 70px;
+}
+
+/* 导航栏Logo样式 */
+.nav-logo-image {
+    height: 40px;
+    width: auto;
+    object-fit: contain;
+    transition: all 0.3s ease;
+}
+
+.nav-logo-image:hover {
+    transform: scale(1.05);
 }
 
 .hero-container {
@@ -1893,5 +1905,148 @@ body {
     
     .tool-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 实习经历样式 */
+.internships {
+    padding: 80px 0;
+    background: var(--bg-secondary);
+}
+
+.internships-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.internship-card {
+    background: var(--bg-primary);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.internship-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-primary);
+}
+
+.internship-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--primary-color);
+}
+
+.internship-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--gradient-primary);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 24px;
+}
+
+.internship-content {
+    flex: 1;
+}
+
+.internship-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.internship-header h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.4;
+    flex: 1;
+}
+
+.internship-period {
+    background: var(--gradient-secondary);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.internship-description {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* 实习经历响应式设计 */
+@media (max-width: 768px) {
+    .internships-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .internship-card {
+        padding: 20px;
+    }
+    
+    .internship-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    
+    .internship-header h4 {
+        font-size: 16px;
+    }
+    
+    .internship-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .internship-card {
+        padding: 15px;
+    }
+    
+    .internship-description {
+        font-size: 13px;
+    }
+}
+
+/* 导航栏Logo响应式设计 */
+@media (max-width: 768px) {
+    .nav-logo-image {
+        height: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-logo-image {
+        height: 30px;
     }
 } 
